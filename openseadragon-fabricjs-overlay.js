@@ -4,10 +4,11 @@
  */
 (function () {
 
-    // if (!window.OpenSeadragon) {
-    //     console.error('[openseadragon-canvas-overlay] requires OpenSeadragon');
-    //     return;
-    // }
+    if (!window.OpenSeadragon) {
+        OpenSeadragon = require('openseadragon')
+        // console.error('[openseadragon-canvas-overlay] requires OpenSeadragon');
+        // return;
+    }
 
     /**
      * Adds fabric.js overlay capability to your OpenSeadragon Viewer
